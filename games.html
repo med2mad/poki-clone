@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games - GamePortal</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .game-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .game-title {
+            font-weight: bold;
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">GamePortal</div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 style="margin:30px 0 10px 0;font-size:22px;font-weight:bold;">All Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=21" alt="Game 1" class="game-image">
+                <div class="game-title">Game One</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=22" alt="Game 2" class="game-image">
+                <div class="game-title">Game Two</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=23" alt="Game 3" class="game-image">
+                <div class="game-title">Game Three</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=24" alt="Game 4" class="game-image">
+                <div class="game-title">Game Four</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=25" alt="Game 5" class="game-image">
+                <div class="game-title">Game Five</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=26" alt="Game 6" class="game-image">
+                <div class="game-title">Game Six</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=27" alt="Game 7" class="game-image">
+                <div class="game-title">Game Seven</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=28" alt="Game 8" class="game-image">
+                <div class="game-title">Game Eight</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=29" alt="Game 9" class="game-image">
+                <div class="game-title">Game Nine</div>
+            </div>
+            <div class="game-card">
+                <img src="https://picsum.photos/300/150?random=30" alt="Game 10" class="game-image">
+                <div class="game-title">Game Ten</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
